@@ -4,12 +4,12 @@ import React from "react";
 const Todo = ({ todo, todos, setTodos, activeTodos, setActiveTodos }) => {
   const deleteHandler = (e) => {
     var filteredTodos = todos.filter((td) => {
-      if (td.id !== e.target.id) {
+      if (td.id != e.target.id) {
         return td;
       }
     });
     var filteredActives = activeTodos.filter((td) => {
-      if (td.id !== e.target.id) {
+      if (td.id != e.target.id) {
         return td;
       }
     });
@@ -18,14 +18,14 @@ const Todo = ({ todo, todos, setTodos, activeTodos, setActiveTodos }) => {
   };
   const isDoneHandler = (e) => {
     let newTodos = todos.map((todo) => {
-      if (todo.id === e.target.id) {
+      if (todo.id == e.target.id) {
         return { ...todo, isDone: e.target.checked };
       } else {
         return todo;
       }
     });
     let newActiveTodos = activeTodos.map((todo) => {
-      if (todo.id === e.target.id) {
+      if (todo.id == e.target.id) {
         return { ...todo, isDone: e.target.checked };
       } else {
         return todo;
