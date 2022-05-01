@@ -26,7 +26,7 @@ const Category = ({
       if(category.text===activeCategory){
         setActiveCategory("");
       }
-      if (category.text != e.target.id) {
+      if (category.text !== e.target.id) {
         return category;
       }
     });

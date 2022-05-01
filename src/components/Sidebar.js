@@ -39,7 +39,7 @@ const Sidebar = ({
 /*   const deleteHandler = (e) => {
     e.preventDefault();
     setCategories([
-      categories.filter(category => category.id != e.target.id)
+      categories.filter(category => category.id = e.target.id)
     ])
 
     console.log(e.target.id);
